@@ -40,22 +40,27 @@
             this.txtPerimeter = new System.Windows.Forms.TextBox();
             this.txtArea = new System.Windows.Forms.TextBox();
             this.grbInputs = new System.Windows.Forms.GroupBox();
+            this.lblDiag2 = new System.Windows.Forms.Label();
+            this.txtDiag2 = new System.Windows.Forms.TextBox();
             this.lblSides = new System.Windows.Forms.Label();
             this.lblDiag1 = new System.Windows.Forms.Label();
             this.txtSides = new System.Windows.Forms.TextBox();
             this.txtDiag1 = new System.Windows.Forms.TextBox();
-            this.grbGirar = new System.Windows.Forms.GroupBox();
             this.grbEscalar = new System.Windows.Forms.GroupBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.lblDiag2 = new System.Windows.Forms.Label();
-            this.txtDiag2 = new System.Windows.Forms.TextBox();
+            this.tckScale = new System.Windows.Forms.TrackBar();
+            this.lblHour = new System.Windows.Forms.Label();
+            this.lblAntihour = new System.Windows.Forms.Label();
+            this.btnRotateHour = new System.Windows.Forms.Button();
+            this.btnRotateAHour = new System.Windows.Forms.Button();
+            this.grbGirar = new System.Windows.Forms.GroupBox();
             this.grbCanvas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.grnProcess.SuspendLayout();
             this.grbOutputs.SuspendLayout();
             this.grbInputs.SuspendLayout();
             this.grbEscalar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tckScale)).BeginInit();
+            this.grbGirar.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbCanvas
@@ -208,6 +213,26 @@
             this.grbInputs.TabStop = false;
             this.grbInputs.Text = "Entradas";
             // 
+            // lblDiag2
+            // 
+            this.lblDiag2.AutoSize = true;
+            this.lblDiag2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.lblDiag2.Location = new System.Drawing.Point(19, 163);
+            this.lblDiag2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.lblDiag2.Name = "lblDiag2";
+            this.lblDiag2.Size = new System.Drawing.Size(144, 20);
+            this.lblDiag2.TabIndex = 5;
+            this.lblDiag2.Text = "Diagonal menor(d):";
+            // 
+            // txtDiag2
+            // 
+            this.txtDiag2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.txtDiag2.Location = new System.Drawing.Point(169, 153);
+            this.txtDiag2.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.txtDiag2.Name = "txtDiag2";
+            this.txtDiag2.Size = new System.Drawing.Size(170, 26);
+            this.txtDiag2.TabIndex = 6;
+            // 
             // lblSides
             // 
             this.lblSides.AutoSize = true;
@@ -248,18 +273,9 @@
             this.txtDiag1.Size = new System.Drawing.Size(170, 26);
             this.txtDiag1.TabIndex = 3;
             // 
-            // grbGirar
-            // 
-            this.grbGirar.Location = new System.Drawing.Point(386, 13);
-            this.grbGirar.Name = "grbGirar";
-            this.grbGirar.Size = new System.Drawing.Size(128, 206);
-            this.grbGirar.TabIndex = 21;
-            this.grbGirar.TabStop = false;
-            this.grbGirar.Text = "Rotar";
-            // 
             // grbEscalar
             // 
-            this.grbEscalar.Controls.Add(this.trackBar1);
+            this.grbEscalar.Controls.Add(this.tckScale);
             this.grbEscalar.Location = new System.Drawing.Point(330, 378);
             this.grbEscalar.Name = "grbEscalar";
             this.grbEscalar.Size = new System.Drawing.Size(184, 132);
@@ -267,32 +283,66 @@
             this.grbEscalar.TabStop = false;
             this.grbEscalar.Text = "Escalar";
             // 
-            // trackBar1
+            // tckScale
             // 
-            this.trackBar1.Location = new System.Drawing.Point(6, 33);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(172, 69);
-            this.trackBar1.TabIndex = 0;
+            this.tckScale.Location = new System.Drawing.Point(6, 33);
+            this.tckScale.Minimum = 1;
+            this.tckScale.Name = "tckScale";
+            this.tckScale.Size = new System.Drawing.Size(172, 69);
+            this.tckScale.TabIndex = 0;
+            this.tckScale.Value = 1;
+            this.tckScale.Scroll += new System.EventHandler(this.tckScale_Scroll);
             // 
-            // lblDiag2
+            // lblHour
             // 
-            this.lblDiag2.AutoSize = true;
-            this.lblDiag2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.lblDiag2.Location = new System.Drawing.Point(19, 163);
-            this.lblDiag2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.lblDiag2.Name = "lblDiag2";
-            this.lblDiag2.Size = new System.Drawing.Size(144, 20);
-            this.lblDiag2.TabIndex = 5;
-            this.lblDiag2.Text = "Diagonal menor(d):";
+            this.lblHour.AutoSize = true;
+            this.lblHour.Location = new System.Drawing.Point(2, 36);
+            this.lblHour.Name = "lblHour";
+            this.lblHour.Size = new System.Drawing.Size(61, 20);
+            this.lblHour.TabIndex = 0;
+            this.lblHour.Text = "Horario";
             // 
-            // txtDiag2
+            // lblAntihour
             // 
-            this.txtDiag2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.txtDiag2.Location = new System.Drawing.Point(169, 153);
-            this.txtDiag2.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
-            this.txtDiag2.Name = "txtDiag2";
-            this.txtDiag2.Size = new System.Drawing.Size(170, 26);
-            this.txtDiag2.TabIndex = 6;
+            this.lblAntihour.AutoSize = true;
+            this.lblAntihour.Location = new System.Drawing.Point(6, 106);
+            this.lblAntihour.Name = "lblAntihour";
+            this.lblAntihour.Size = new System.Drawing.Size(94, 20);
+            this.lblAntihour.TabIndex = 1;
+            this.lblAntihour.Text = "Anti-Horario";
+            // 
+            // btnRotateHour
+            // 
+            this.btnRotateHour.Location = new System.Drawing.Point(10, 68);
+            this.btnRotateHour.Name = "btnRotateHour";
+            this.btnRotateHour.Size = new System.Drawing.Size(90, 35);
+            this.btnRotateHour.TabIndex = 2;
+            this.btnRotateHour.Text = "10°";
+            this.btnRotateHour.UseVisualStyleBackColor = true;
+            this.btnRotateHour.Click += new System.EventHandler(this.btnRotateHour_Click);
+            // 
+            // btnRotateAHour
+            // 
+            this.btnRotateAHour.Location = new System.Drawing.Point(10, 129);
+            this.btnRotateAHour.Name = "btnRotateAHour";
+            this.btnRotateAHour.Size = new System.Drawing.Size(90, 35);
+            this.btnRotateAHour.TabIndex = 3;
+            this.btnRotateAHour.Text = "10°";
+            this.btnRotateAHour.UseVisualStyleBackColor = true;
+            this.btnRotateAHour.Click += new System.EventHandler(this.btnRotateAHour_Click);
+            // 
+            // grbGirar
+            // 
+            this.grbGirar.Controls.Add(this.btnRotateAHour);
+            this.grbGirar.Controls.Add(this.btnRotateHour);
+            this.grbGirar.Controls.Add(this.lblAntihour);
+            this.grbGirar.Controls.Add(this.lblHour);
+            this.grbGirar.Location = new System.Drawing.Point(386, 13);
+            this.grbGirar.Name = "grbGirar";
+            this.grbGirar.Size = new System.Drawing.Size(128, 206);
+            this.grbGirar.TabIndex = 21;
+            this.grbGirar.TabStop = false;
+            this.grbGirar.Text = "Rotar";
             // 
             // FrmRombo
             // 
@@ -306,9 +356,11 @@
             this.Controls.Add(this.grnProcess);
             this.Controls.Add(this.grbOutputs);
             this.Controls.Add(this.grbInputs);
+            this.KeyPreview = true;
             this.Name = "FrmRombo";
             this.Text = "FrmRombo";
             this.Load += new System.EventHandler(this.FrmRombo_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FrmRombo_KeyUp);
             this.grbCanvas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
             this.grnProcess.ResumeLayout(false);
@@ -318,7 +370,9 @@
             this.grbInputs.PerformLayout();
             this.grbEscalar.ResumeLayout(false);
             this.grbEscalar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tckScale)).EndInit();
+            this.grbGirar.ResumeLayout(false);
+            this.grbGirar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -341,10 +395,14 @@
         private System.Windows.Forms.Label lblDiag1;
         private System.Windows.Forms.TextBox txtSides;
         private System.Windows.Forms.TextBox txtDiag1;
-        private System.Windows.Forms.GroupBox grbGirar;
         private System.Windows.Forms.GroupBox grbEscalar;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar tckScale;
         private System.Windows.Forms.Label lblDiag2;
         private System.Windows.Forms.TextBox txtDiag2;
+        private System.Windows.Forms.Label lblHour;
+        private System.Windows.Forms.Label lblAntihour;
+        private System.Windows.Forms.Button btnRotateHour;
+        private System.Windows.Forms.Button btnRotateAHour;
+        private System.Windows.Forms.GroupBox grbGirar;
     }
 }

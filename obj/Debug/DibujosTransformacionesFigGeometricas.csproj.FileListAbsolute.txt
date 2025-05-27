@@ -26,3 +26,17 @@ C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\Dibujo
 C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\DibujosTransformacionesFigGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.csproj.CoreCompileInputs.cache
 C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\DibujosTransformacionesFigGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.exe
 C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\DibujosTransformacionesFigGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.pdb
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\bin\Debug\DibujosTransformacionesFigGeometricas.exe.config
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\bin\Debug\DibujosTransformacionesFigGeometricas.exe
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\bin\Debug\DibujosTransformacionesFigGeometricas.pdb
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.csproj.AssemblyReference.cache
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.FrmHome.resources
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.FrmPentagono.resources
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.FrmRombo.resources
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.FrmRomboide.resources
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.FrmTrapezoide.resources
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.Properties.Resources.resources
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.csproj.GenerateResource.cache
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.csproj.CoreCompileInputs.cache
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.exe
+C:\Users\rouss\source\repos\RougeSeven\DibujosTransformacionesGeometricas\obj\Debug\DibujosTransformacionesFigGeometricas.pdb

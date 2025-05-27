@@ -43,6 +43,42 @@ namespace DibujosTransformacionesFigGeometricas
         {
             mRombo.CloseForm(this);
         }
+        
+   
 
+        private void FrmRombo_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up)
+            {
+                mRombo.move("up", picCanvas);
+            }
+            else if (e.KeyCode == Keys.Down)
+            {
+                mRombo.move("down", picCanvas);
+            }
+            else if (e.KeyCode == Keys.Left)
+            {
+                mRombo.move("left", picCanvas);
+            }
+            else if(e.KeyCode == Keys.Right) 
+            {
+                mRombo.move("right", picCanvas);
+            }
+        }
+
+        private void tckScale_Scroll(object sender, EventArgs e)
+        {
+            mRombo.scale(tckScale,picCanvas);
+        }
+
+        private void btnRotateHour_Click(object sender, EventArgs e)
+        {
+            mRombo.rotate("hourly", picCanvas);
+        }
+
+        private void btnRotateAHour_Click(object sender, EventArgs e)
+        {
+            mRombo.rotate("antihourly", picCanvas);
+        }
     }
 }
